@@ -1,0 +1,163 @@
+@import "syntax-variables";
+
+.editor {
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
+}
+
+.editor .gutter {
+  background-color: @syntax-gutter-background-color;
+  color: @syntax-gutter-text-color;
+}
+
+.editor .gutter .line-number.cursor-line {
+  background-color: @syntax-gutter-background-color-selected;
+  color: @syntax-gutter-text-color-selected;
+}
+
+.editor .gutter .line-number.cursor-line-no-selection {
+  color: @syntax-gutter-text-color-selected;
+}
+
+.editor .wrap-guide {
+  color: @syntax-wrap-guide-color;
+}
+
+.editor .indent-guide {
+  color: @syntax-indent-guide-color;
+}
+
+.editor .invisible-character {
+  color: @syntax-invisible-character-color;
+}
+
+.editor .search-results .marker .region {
+  background-color: transparent;
+  border: @syntax-result-marker-color;
+}
+
+.editor .search-results .marker.current-result .region {
+  border: @syntax-result-marker-color-selected;
+}
+
+.editor.is-focused .cursor {
+  border-color: @syntax-cursor-color;
+}
+
+.editor.is-focused .selection .region {
+  background-color: @syntax-selection-color;
+}
+
+.editor.is-focused .line-number.cursor-line-no-selection, .editor.is-focused .line.cursor-line {
+  background-color: #f5f7fa;
+}
+
+.comment, .string.quoted.double.block.python {
+  font-style: italic;
+  color: #678E68;
+}
+
+.string {
+  color: #932323;
+}
+
+.constant.numeric {
+  color: #c23838;
+}
+
+.constant.language {
+  color: #46758c;
+}
+
+.constant.character, .constant.other {
+}
+
+.variable.language, .variable.other {
+  color: #414141;
+}
+
+.keyword {
+  font-weight: bold;
+  color: #714d99;
+}
+
+.storage {
+  font-weight: bold;
+  color: #714d99;
+}
+
+.entity.name.class {
+  color: #cd751b;
+}
+
+.entity.other.inherited-class {
+}
+
+.entity.name.function {
+  font-weight: bold;
+  color: #aa5c1b;
+}
+
+.string.unquoted {
+}
+
+.entity.name.tag {
+}
+
+.entity.other.attribute-name {
+}
+
+.support.function {
+  color: #46758c;
+}
+
+.support.constant {
+}
+
+.support.type, .support.class {
+}
+
+.support.other.variable {
+}
+
+.invalid {
+  color: #FF0000;
+  background-color: rgba(252, 0, 10, 0.5);
+}
+
+.entity.name {
+  font-weight: bold;
+  color: #b65c1b;
+}
+
+.sublimelinter.annotations {
+  color: #FFFFFF;
+  background-color: #FFFFAA;
+}
+
+.sublimelinter.outline.illegal {
+  color: #FFFFFF;
+  background-color: #FF4A52;
+}
+
+.sublimelinter.underline.illegal {
+  background-color: #FF0000;
+}
+
+.sublimelinter.outline.warning {
+  color: #FFFFFF;
+  background-color: #DF9400;
+}
+
+.sublimelinter.underline.warning {
+  background-color: #FF0000;
+}
+
+.sublimelinter.outline.violation {
+  color: #FFFFFF;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.sublimelinter.underline.violation {
+  background-color: #FF0000;
+}
