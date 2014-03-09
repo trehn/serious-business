@@ -4,4 +4,4 @@ A light and unobtrusive theme that was born enterprise-ready. Available for [Ato
 
 ![Atom screenshot](https://raw.github.com/trehn/serious-business/master/screenshots/atom.png)
 
-Font used: Bitstream Vera Sans Mono at 14pt
+Font used: Consolas at 14pt
