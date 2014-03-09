@@ -1,7 +1,7 @@
 {
   "name": "serious-business",
   "theme": "syntax",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Light and unobtrusive theme, enterprise-ready",
   "repository": "https://github.com/trehn/serious-business",
   "license": "MIT",
