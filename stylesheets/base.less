@@ -24,7 +24,12 @@
 }
 
 .editor .indent-guide {
-  color: @syntax-indent-guide-color;
+  color: @syntax-background-color;
+}
+
+.editor .indent-guide.invisible-character {
+  box-shadow: 0;
+  border-left: 1px dotted @syntax-indent-guide-color;
 }
 
 .editor .invisible-character {
@@ -46,6 +51,10 @@
 
 .editor.is-focused .selection .region {
   background-color: @syntax-selection-color;
+}
+
+.editor.is-focused .selection .invisible-character {
+  color: red !important;
 }
 
 .editor.is-focused .line-number.cursor-line-no-selection, .editor.is-focused .line.cursor-line {
