@@ -1,110 +1,111 @@
 @import "syntax-variables";
 
 .editor {
-  background-color: @syntax-background-color;
-  color: @syntax-text-color;
+	background-color: @syntax-background-color;
+	color: @syntax-text-color;
 }
 
 .editor .gutter {
-  background-color: @syntax-gutter-background-color;
-  color: @syntax-gutter-text-color;
+	background-color: @syntax-gutter-background-color;
+	color: @syntax-gutter-text-color;
 }
 
 .editor .gutter .line-number.cursor-line {
-  background-color: @syntax-gutter-background-color-selected;
-  color: @syntax-gutter-text-color-selected;
+	background-color: @syntax-gutter-background-color-selected;
+	color: @syntax-gutter-text-color-selected;
 }
 
 .editor .gutter .line-number.cursor-line-no-selection {
-  color: @syntax-gutter-text-color-selected;
+	color: @syntax-gutter-text-color-selected;
 }
 
 .editor .wrap-guide {
-  color: @syntax-wrap-guide-color;
+	color: @syntax-wrap-guide-color;
 }
 
 .editor .indent-guide {
-  color: @syntax-background-color;
+	color: @syntax-background-color;
 }
 
 .editor .indent-guide.invisible-character {
-  box-shadow: 0;
-  border-left: 1px dotted @syntax-indent-guide-color;
+	box-shadow: 0;
+	border-left: 1px dotted @syntax-indent-guide-color;
+	padding-left: calc(0.5em - 1px);
 }
 
 .editor .invisible-character {
-  color: @syntax-background-color;
+	color: @syntax-background-color;
 }
 
 .editor .search-results .marker .region {
-  background-color: transparent;
-  border: @syntax-result-marker-color;
+	background-color: transparent;
+	border: @syntax-result-marker-color;
 }
 
 .editor .search-results .marker.current-result .region {
-  border: @syntax-result-marker-color-selected;
+	border: @syntax-result-marker-color-selected;
 }
 
 .editor.is-focused .cursor {
-  border-color: @syntax-cursor-color;
+	border-color: @syntax-cursor-color;
 }
 
 .editor.is-focused .selection .region {
-  background-color: @syntax-selection-color;
+	background-color: @syntax-selection-color;
 }
 
 .editor.is-focused .selection .invisible-character {
-  color: red !important;
+	color: red !important;
 }
 
 .editor.is-focused .line-number.cursor-line-no-selection, .editor.is-focused .line.cursor-line {
-  background-color: #f5f7fa;
+	background-color: #f5f7fa;
 }
 
 .comment, .string.quoted.double.block.python {
-  font-style: italic;
-  color: #678E68;
+	font-style: italic;
+	color: #678E68;
 }
 
 .string {
-  color: #932323;
+	color: #932323;
 }
 
 .constant.numeric {
-  color: #c23838;
+	color: #c23838;
 }
 
 .constant.language {
-  color: #46758c;
+	color: #46758c;
 }
 
 .constant.character, .constant.other {
 }
 
 .variable.language, .variable.other {
-  color: #414141;
+	color: #414141;
 }
 
 .keyword {
-  font-weight: bold;
-  color: #714d99;
+	font-weight: bold;
+	color: #714d99;
 }
 
 .storage {
-  font-weight: bold;
-  color: #714d99;
+	font-weight: bold;
+	color: #714d99;
 }
 
 .entity.name.class {
-  color: #B65C1C;
+	color: #B65C1C;
 }
 
 .entity.other.inherited-class {
 }
 
 .entity.name.function {
-  font-weight: bold;
-  color: #aa5c1b;
+	font-weight: bold;
+	color: #aa5c1b;
 }
 
 .string.unquoted {
@@ -117,7 +118,7 @@
 }
 
 .support.function {
-  color: #46758c;
+	color: #46758c;
 }
 
 .support.constant {
@@ -130,45 +131,45 @@
 }
 
 .invalid {
-  color: #FF0000;
-  background-color: rgba(252, 0, 10, 0.5);
+	color: #FF0000;
+	background-color: rgba(252, 0, 10, 0.5);
 }
 
 .entity.name {
-  font-weight: bold;
-  color: #b65c1b;
+	font-weight: bold;
+	color: #b65c1b;
 }
 
 .sublimelinter.annotations {
-  color: #FFFFFF;
-  background-color: #FFFFAA;
+	color: #FFFFFF;
+	background-color: #FFFFAA;
 }
 
 .sublimelinter.outline.illegal {
-  color: #FFFFFF;
-  background-color: #FF4A52;
+	color: #FFFFFF;
+	background-color: #FF4A52;
 }
 
 .sublimelinter.underline.illegal {
-  background-color: #FF0000;
+	background-color: #FF0000;
 }
 
 .sublimelinter.outline.warning {
-  color: #FFFFFF;
-  background-color: #DF9400;
+	color: #FFFFFF;
+	background-color: #DF9400;
 }
 
 .sublimelinter.underline.warning {
-  background-color: #FF0000;
+	background-color: #FF0000;
 }
 
 .sublimelinter.outline.violation {
-  color: #FFFFFF;
-  background-color: rgba(255, 255, 255, 0.2);
+	color: #FFFFFF;
+	background-color: rgba(255, 255, 255, 0.2);
 }
 
 .sublimelinter.underline.violation {
-  background-color: #FF0000;
+	background-color: #FF0000;
 }
 
 .decorator.python .function.python {
@@ -177,10 +178,31 @@
 }
 
 .string.quoted.double.block.python .string  {
-  font-style: italic;
-  color: #678E68;
+	font-style: italic;
+	color: #678E68;
 }
 
 .entity.name.function .support.function {
 	font-weight: normal;
+}
+
+.wrap-guide {
+	width: 1px;
+	background-color: #C5C6C9;
+}
+
+.file.entry.list-item.status-modified {
+	color: #db8225;
+}
+
+.list-tree li.list-nested-item.status-modified > .list-item {
+	color: #db8225 !important;
+}
+
+.gutter .line-number.git-line-added {
+	border-left: 2px solid #64b661 !important;
+}
+
+.gutter .line-number.git-line-modified {
+	border-left: 2px solid #dead3d !important;
 }
